@@ -13,8 +13,6 @@ public class FrozenHamItem extends FrozenItem {
     public FrozenHamItem(float attackDamage, float attackSpeed,int freezingTicks, Settings settings) {
         super(freezingTicks, settings.component(DataComponentTypes.ATTRIBUTE_MODIFIERS, createAttributeModifiers(attackDamage, attackSpeed)));
     }
-
-
     @Override
     public boolean isEnabled(FeatureSet enabledFeatures) {
         return ModIntegrations.isFDLoaded();

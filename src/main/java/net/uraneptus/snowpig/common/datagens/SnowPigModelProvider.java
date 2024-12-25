@@ -1,10 +1,10 @@
 package net.uraneptus.snowpig.common.datagens;
 
+import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.client.data.BlockStateModelGenerator;
+import net.minecraft.client.data.ItemModelGenerator;
+import net.minecraft.client.data.Models;
 import net.uraneptus.snowpig.core.registry.SnowPigItems;
 
 public class SnowPigModelProvider extends FabricModelProvider {
@@ -22,5 +22,6 @@ public class SnowPigModelProvider extends FabricModelProvider {
         itemModelGenerator.register(SnowPigItems.FROZEN_HAM, Models.HANDHELD);
         itemModelGenerator.register(SnowPigItems.FROZEN_PORKCHOP, Models.GENERATED);
         itemModelGenerator.register(SnowPigItems.MUSIC_DISC_FROSTY_SNIG, Models.GENERATED);
+        itemModelGenerator.registerSpawnEgg(SnowPigItems.SNOW_PIG_SPAWN_EGG, 0x70CFF3, 0xE2FBFA);
     }
 }

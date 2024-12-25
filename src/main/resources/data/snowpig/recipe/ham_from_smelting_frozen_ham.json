@@ -1,9 +1,7 @@
 {
 	"type": "minecraft:smelting",
 	"category": "food",
-	"ingredient": {
-		"item": "snowpig:frozen_ham"
-	},
+	"ingredient": "snowpig:frozen_ham",
 	"result": {
 		"id": "farmersdelight:ham"
 	},

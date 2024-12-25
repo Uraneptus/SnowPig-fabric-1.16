@@ -8,7 +8,6 @@ import net.uraneptus.snowpig.SnowPig;
 public class SnowPigBiomeTags {
     public static final TagKey<Biome> SPAWNS_SNOW_PIG = of("spawns_snow_pig");
 
-
     private static TagKey<Biome> of(String id) {
         return TagKey.of(RegistryKeys.BIOME, SnowPig.id(id));
     }

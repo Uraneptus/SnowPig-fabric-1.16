@@ -10,17 +10,14 @@ import net.uraneptus.snowpig.SnowPig;
 public class SnowPigSounds {
     public static final SoundEvent SNOW_PIG_AMBIENT = register("entity.snow_pig.ambient");
 
-
     public static final SoundEvent SNOW_PIG_HURT = register("entity.snow_pig.hurt");
-
 
     public static final SoundEvent SNOW_PIG_DEATH = register("entity.snow_pig.death");
 
-
     public static final SoundEvent SNOW_PIG_STEP = register("entity.snow_pig.step");
 
-
     public static final RegistryEntry.Reference<SoundEvent> MUSIC_DISC_FROSTY_SNIG = registerReference("music_disc.frosty_snig");
+
 
     private static RegistryEntry.Reference<SoundEvent> registerReference(String id) {
         return registerReference(SnowPig.id(id), SnowPig.id(id));

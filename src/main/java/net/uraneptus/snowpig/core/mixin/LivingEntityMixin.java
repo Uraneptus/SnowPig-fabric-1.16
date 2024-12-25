@@ -34,17 +34,10 @@ public abstract class LivingEntityMixin extends Entity {
             cir.setReturnValue(false);
         }
     }
-//    @Inject(method = "tickMovement()V", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/LivingEntity;damage(Lnet/minecraft/entity/damage/DamageSource;F)Z", ordinal = 0), cancellable = true)
-//    private void snowpig_tickMovement(CallbackInfo tickMovement) {
-//        if (this.getType() == EntityType.PIG) {
-//            tickMovement.cancel();
-//        }
-//    }
 
     @Inject(method = "tick", at = @At(value = "HEAD"))
     private void tick(CallbackInfo ci) {
         Entity entity = this;
-
         if (entity instanceof PigEntity pig) {
             if (pig.inPowderSnow) {
                 if (pig.isFrozen()) {
@@ -52,7 +45,7 @@ public abstract class LivingEntityMixin extends Entity {
                         freezeTicks--;
                     }
                     if (freezeTicks == 0) {
-                        pig.convertTo(SnowPigEntityTypes.SNOW_PIG, EntityConversionContext.create(pig, true, true), (snowPig) -> {
+                        pig.convertTo(SnowPigEntityTypes.SNOW_PIG, EntityConversionContext.create(pig, true, true), snowPig -> {
                             if (!this.isSilent()) {
                                 this.getWorld().syncWorldEvent(null, 1048, this.getBlockPos(), 0);
                             }

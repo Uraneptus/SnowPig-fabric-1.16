@@ -31,6 +31,7 @@ public class SnowPigEntity extends PigEntity{
     }
 
 
+
     public static DefaultAttributeContainer.Builder createSnowPigAttributes() {
         return createPigAttributes()
                 .add(EntityAttributes.MOVEMENT_SPEED, 0.15D)

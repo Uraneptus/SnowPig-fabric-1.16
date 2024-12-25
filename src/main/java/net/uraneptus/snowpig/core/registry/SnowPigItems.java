@@ -25,7 +25,7 @@ public class SnowPigItems {
     public static final FoodComponent FROZEN_MEAT = new FoodComponent.Builder().nutrition(5).saturationModifier(0.3f).build();
     public static final Item FROZEN_PORKCHOP = register("frozen_porkchop", settings -> new FrozenItem(400, settings), new Item.Settings().food(FROZEN_MEAT).component(DataComponentTypes.CONSUMABLE, SnowPigConsumeComponents.ROTTEN_FLESH));
     public static final Item FROZEN_HAM = register("frozen_ham", settings -> new FrozenHamItem(2.0f, -1.2F, 600, settings), new Item.Settings().food(FROZEN_MEAT).component(DataComponentTypes.CONSUMABLE, SnowPigConsumeComponents.ROTTEN_FLESH));
-    public static final Item SNOW_PIG_SPAWN_EGG = register("snow_pig_spawn_egg", settings -> new SpawnEggItem(SnowPigEntityTypes.SNOW_PIG, 0x70CFF3, 0xE2FBFA, settings));
+    public static final Item SNOW_PIG_SPAWN_EGG = register("snow_pig_spawn_egg", settings -> new SpawnEggItem(SnowPigEntityTypes.SNOW_PIG, settings));
     public static Item MUSIC_DISC_FROSTY_SNIG = register("music_disc_frosty_snig", new Item.Settings().maxCount(1).rarity(Rarity.RARE).jukeboxPlayable(SnowPigJukeboxSongs.FROSTY_SNIG));
 
     public static Item register(String path, Item.Settings settings) {
