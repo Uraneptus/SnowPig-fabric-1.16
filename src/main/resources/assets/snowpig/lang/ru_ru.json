@@ -1,0 +1,13 @@
+{
+  "entity.snowpig.snow_pig": "Снежный свин",
+  "item.snowpig.frozen_ham": "Замороженная ветчина",
+  "item.snowpig.frozen_porkchop": "Замороженная свинина",
+  "item.snowpig.music_disc_frosty_snig": "Пластинка",
+  "item.snowpig.snow_pig_spawn_egg": "Яйцо призыва снежного свина",
+  "jukebox_song.snowpig.frosty_snig": "Луз — Frosty Snig",
+  "subtitles.snowpig.entity.snow_pig.ambient": "Снежный свин хрюкает",
+  "subtitles.snowpig.entity.snow_pig.death": "Снежный свин погибает",
+  "subtitles.snowpig.entity.snow_pig.hurt": "Снежный свин ранен",
+  "tag.entity_type.snowpig.killer_for_snowpig_disc": "Убийца для пластинки снежного свина",
+  "tag.worldgen.biome.snowpig.spawns_snow_pig": "Появляются снежные свины"
+}
